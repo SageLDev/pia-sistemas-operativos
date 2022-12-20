@@ -1,0 +1,40 @@
+﻿@model PIAProyecto.Models.Cita
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Eliminar</h2>
+
+<h3>Seguro que quieres eliminar esto?</h3>
+<div>
+    <h4>Cita</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraDeCita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraDeCita)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Volver a lista", "Index")
+        </div>
+    }
+</div>

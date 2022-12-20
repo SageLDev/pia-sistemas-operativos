@@ -1,0 +1,39 @@
+﻿@model IEnumerable<PIAProyecto.Models.Cita>
+
+@{
+    ViewBag.Title = "Citas";
+}
+
+<h2>Citas</h2>
+
+<p>
+    @Html.ActionLink("Crear nueva cita", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoraDeCita)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoraDeCita)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.CitaID }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.CitaID }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.CitaID })
+        </td>
+    </tr>
+}
+
+</table>

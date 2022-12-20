@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="BDSisOpPIAEntities-Web.config Connection String" description="BDSisOpPIAEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Citas.csdl|res://*/Models.Citas.ssdl|res://*/Models.Citas.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(localdb)\ProjectModels;initial catalog=BDSisOpPIA;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\SageL\\Documents\\Salvador\\UNIVERSIDAD\\Materias\ 4to\ semestre\\Sistemas\ Operativos\\PIAProyecto\\PIAProyecto\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BDSisOpPIAEntities']/@connectionString" />
+  </parameter>
+  <parameter name="BDSisOpPIAEntities1-Web.config Connection String" description="BDSisOpPIAEntities1 Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Model1.csdl|res://*/Models.Model1.ssdl|res://*/Models.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(localdb)\ProjectModels;initial catalog=BDSisOpPIA;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\SageL\\Documents\\Salvador\\UNIVERSIDAD\\Materias\ 4to\ semestre\\Sistemas\ Operativos\\PIAProyecto\\PIAProyecto\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BDSisOpPIAEntities1']/@connectionString" />
+  </parameter>
+</parameters>

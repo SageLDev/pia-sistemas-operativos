@@ -1,0 +1,196 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <section id="title">
+
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="">Pet & Health</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerTitle" aria-controls="navbarTogglerTitle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerTitle">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cta">Contactanos!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonios</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Title -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="title-text">Trabajando contigo para la salud de tus mascotas</h1>
+                    <p class="btn btn-danger link">
+                        @Html.ActionLink("Agenda una cita ahora!", "Index", "Citas")
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 title-image-column">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features -->
+
+    <section id="features">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fas fa-check-circle fa-5x features-image"></i>
+                    <h3 class="feature-title">Consulta gratis!</h3>
+                    <p>Servicio de la mejor calidad todos los dias de la semana.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-bullseye fa-5x features-image"></i>
+                    <h3 class="feature-title">Agendacion Remota</h3>
+                    <p>Puedes hacer tu cita por correo o telefono, contactanos!</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-heart fa-5x features-image"></i>
+                    <h3 class="feature-title">Amor y Cariño</h3>
+                    <p>Apapacho y cuidado para tu mascota, por ser los mas importantes en la familia!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials -->
+
+    <section id="testimonials">
+
+        <div id="testimonials-carousel" class="carousel slide" data-bs-ride="carousel" data-pause="hover">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active container-fluid">
+                    <h2 class="testimonials-text">El trato es excelente, mis 3 gatos han sido vacunados, desparacitados y esterilizados con ellos y ninguno tuvo complicaciones y todo a un excelente precio. Altamente recomendado.</h2>
+                    <img class="testimonial-image" src="../../Content/Images/cat1.png" alt="testimony1">
+                    <em>Aaron Osvaldo de Leon</em>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h2 class="testimonials-text">Me gustó el lugar, ubicación y la atención por parte del personal, médico que atendieron a mi conehijo la explicación fue clara , atenta y acertada.</h2>
+                    <img class="testimonial-image" src="../../Content/Images/rabbit1.png" alt="testimony2">
+                    <em>Ricardo Elizondo Cano</em>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h2 class="testimonials-text">Muy buena atención con los animales y con los dueños.</h2>
+                    <img class="testimonial-image" src="../../Content/Images/cat2.png" alt="testimony3">
+                    <em>David Avalos</em>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- Press -->
+
+    <section id="press">
+        <h2 class="press-title price-number">Echa un vistazo a quienes hablan de nosotros</h2>
+        <img class="press-image" src="../../Content/Images/universal.png" alt="tc-logo">
+        <img class="press-image" src="../../Content/Images/milenio.png" alt="tnw-logo">
+        <img class="press-image" src="../../Content/Images/reforma.png" alt="biz-insider-logo">
+        <img class="press-image" src="../../Content/Images/apasdem.png" alt="mashable-logo">
+
+    </section>
+
+
+    <!-- Pricing -->
+
+    <section id="pricing">
+
+        <h2 class="price-number">Algo para todas las necesidades de nuestras mascotas</h2>
+        <p>Nos comprometemos a ofrecer una variedad de servicios de calidad para nuestos clientes y sus maravillosos dueños.</p>
+
+        <div class="row">
+            <div class="pricing-column col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Diagnostico</h3>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="price-number">Gratis!</h2>
+                        <p>Veterinarios de prestigio</p>
+                        <p>Precision de diagnostico</p>
+                        <p class="align-pricing-2">Sin necesidad de esperar</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-column col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Tratamientos</h3>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="price-number">Seguridad y comodidad</h2>
+                        <p>Desparacitacion</p>
+                        <p>Esterilizacion</p>
+                        <p class="align-pricing">Tratamientos especiales</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-column col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Tienda en local</h3>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="price-number">Cariño y Conforte</h2>
+                        <p>Collares y correas</p>
+                        <p>Casas</p>
+                        <p>Croquetas especiales</p>
+                        <p>Dale un gusto a tu mascota!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Call to Action -->
+
+    <section id="cta">
+        <div class="container-fluid">
+            <h3 class="cta-header texto">Sobre nosotros</h3>
+            <h4>
+                Somos una veterinaria ubicada en San Nicolas de los Garza, NL. con la mision de ayudarte a ti y a toda tu familia a poder darle la mejor vida posible a tus mascotas.
+                Ofreciendo una variedad de servicios como diagnostico de enfermedades, tratamientos especiales y medicamentos, todo con una pasion y cariño indescriptible.
+            </h4>
+            <a class="btn btn-light btn-lg dwlbtn" href="mailto:veterinariapetandhealth@gmail.com"><i class="fas fa-envelope fa-2x"></i><p class="email-text">Contactanos!</p></a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <p class="copyright">PIA Sistemas Operativos</p>
+
+    </footer>
+</div>
